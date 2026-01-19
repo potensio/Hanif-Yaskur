@@ -12,7 +12,7 @@ export const Capabilities: React.FC = () => {
               <Sparkles className="w-3.5 h-3.5" />
               <span>What we do</span>
             </div>
-            <h2 className="text-5xl md:text-6xl text-black font-medium tracking-tight leading-[0.9] font-geist">Capabilities.</h2>
+            <h2 className="text-3xl md:text-5xl text-black font-medium tracking-tight leading-[0.9] font-geist">Capabilities.</h2>
           </div>
 
           <div className="bg-gradient-to-b from-neutral-700 to-neutral-900 rounded-2xl ring-1 ring-white/10 overflow-hidden shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]">
@@ -20,9 +20,9 @@ export const Capabilities: React.FC = () => {
             <details className="group open:bg-white/5" open>
               <summary className="list-none cursor-pointer [&::-webkit-details-marker]:hidden">
                 <div className="flex items-center gap-4 justify-between border-b border-white/10 p-4 sm:p-5">
-                  <div className="text-white/50 text-[11px] font-geist">(001)</div>
+                  <div className="text-white/50 text-base font-geist">(001)</div>
                   <div className="flex-1 min-w-0">
-                    <p className="text-white font-semibold tracking-tight font-geist">Full‑stack product development</p>
+                    <p className="text-white text-xl font-medium tracking-tight font-geist">Web Application</p>
                   </div>
                   <div className="shrink-0 h-8 w-8 rounded-full bg-white/10 ring-1 ring-white/15 flex items-center justify-center text-white transition-colors group-hover:bg-white/20">
                     <Plus className="w-4 h-4 group-open:hidden" />
@@ -37,7 +37,7 @@ export const Capabilities: React.FC = () => {
                       <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/1d73ea37-684c-4cd9-97fd-02bf2d7528d4_320w.jpg" alt="Product dev" className="h-full w-full object-cover" />
                     </div>
                     <div>
-                      <h3 className="text-white font-semibold tracking-tight font-geist">From spec to shipping</h3>
+                      <h3 className="text-white text-xl font-medium tracking-tight font-geist">From spec to shipping</h3>
                       <p className="text-neutral-300 text-sm mt-1 font-geist">Architecture, data, APIs, and slick UIs. We own delivery and keep velocity high with tight CI/CD.</p>
                     </div>
                   </div>
@@ -66,9 +66,9 @@ export const Capabilities: React.FC = () => {
             <details className="group">
               <summary className="list-none cursor-pointer [&::-webkit-details-marker]:hidden">
                 <div className="flex items-center gap-4 justify-between border-t border-b border-white/10 p-4 sm:p-5">
-                  <div className="text-white/50 text-[11px] font-geist">(002)</div>
+                  <div className="text-white/50 text-base font-geist">(002)</div>
                   <div className="flex-1 min-w-0">
-                    <p className="text-white font-semibold tracking-tight font-geist">Frontend systems &amp; performance</p>
+                    <p className="text-white text-xl font-medium tracking-tight font-geist">Mobile Application</p>
                   </div>
                   <div className="shrink-0 h-8 w-8 rounded-full bg-white/10 ring-1 ring-white/15 flex items-center justify-center text-white transition-colors group-hover:bg-white/20">
                     <Plus className="w-4 h-4 group-open:hidden" />
@@ -85,9 +85,9 @@ export const Capabilities: React.FC = () => {
             <details className="group">
               <summary className="list-none cursor-pointer [&::-webkit-details-marker]:hidden">
                 <div className="flex items-center gap-4 justify-between border-t border-b border-white/10 p-4 sm:p-5">
-                  <div className="text-white/50 text-[11px] font-geist">(003)</div>
+                  <div className="text-white/50 text-base font-geist">(003)</div>
                   <div className="flex-1 min-w-0">
-                    <p className="text-white font-semibold tracking-tight font-geist">AI integrations &amp; agents</p>
+                    <p className="text-white text-xl font-medium tracking-tight font-geist">Chrome Extension</p>
                   </div>
                   <div className="shrink-0 h-8 w-8 rounded-full bg-white/10 ring-1 ring-white/15 flex items-center justify-center text-white transition-colors group-hover:bg-white/20">
                     <Plus className="w-4 h-4 group-open:hidden" />
@@ -104,9 +104,9 @@ export const Capabilities: React.FC = () => {
             <details className="group">
               <summary className="list-none cursor-pointer [&::-webkit-details-marker]:hidden">
                 <div className="flex items-center gap-4 justify-between border-t border-white/10 p-4 sm:p-5">
-                  <div className="text-white/50 text-[11px] font-geist">(004)</div>
+                  <div className="text-white/50 text-base font-geist">(004)</div>
                   <div className="flex-1 min-w-0">
-                    <p className="text-white font-semibold tracking-tight font-geist">Cloud &amp; DevOps</p>
+                    <p className="text-white text-xl font-medium tracking-tight font-geist">Integration, Micro Service, etc</p>
                   </div>
                   <div className="shrink-0 h-8 w-8 rounded-full bg-white/10 ring-1 ring-white/15 flex items-center justify-center text-white transition-colors group-hover:bg-white/20">
                     <Plus className="w-4 h-4 group-open:hidden" />

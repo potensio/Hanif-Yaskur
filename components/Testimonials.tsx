@@ -75,7 +75,7 @@ export const Testimonials: React.FC = () => {
               <div className="flex flex-col justify-between mb-12" style={{ animation: 'fadeSlideIn 1s ease-out 0.1s both' }}>
        
           <h2 className="text-5xl leading-[0.9] md:text-6xl text-black tracking-tighter text-left font-geist font-medium mb-4">
-            Subscribe with benefits.
+            Why me?
           </h2>
             <p className="text-xl sm:text-2xl text-black/60 leading-relaxed max-w-3xl font-geist tracking-tighter font-medium">
          Think of it as an in-house talent, without hiring, contracts, or agency headaches. 

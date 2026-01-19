@@ -12,19 +12,11 @@ export const WorkCard: React.FC<WorkCardProps> = ({ project }) => {
       href={project.link}
       className="group break-inside-avoid block rounded-3xl overflow-hidden backdrop-blur-md bg-white/70 border border-white/20 hover:bg-white/80 hover:shadow-2xl hover:shadow-black/10 transition-all duration-300 h-full"
     >
-      <div className="relative">
+      <div className="relative ">
         <img
           src={project.imageUrl}
           alt={project.title}
-          className={`w-full object-cover ${
-             // Using different heights based on aspect ratios in original design approximation
-             project.id === '1' ? 'h-64' :
-             project.id === '2' ? 'h-80' :
-             project.id === '3' ? 'h-72' :
-             project.id === '4' ? 'h-96' :
-             project.id === '5' ? 'h-56' :
-             'h-80'
-          }`}
+          className={`aspect-4/3 object-cover`}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none"></div>
       </div>

@@ -3,17 +3,16 @@ import { Sparkles, Check, ArrowRight } from 'lucide-react';
 
 export const Pricing: React.FC = () => {
   return (
-    <section id="pricing" className="max-w-7xl sm:px-8 mx-auto px-6 py-24">
+    <section id="pricing" className="max-w-7xl sm:px-8 mx-auto px-6 py-16">
       
       {/* Section Header */}
       <div className="text-center mb-16 space-y-4">
-        <div className="inline-flex items-center gap-2 text-black/60 text-sm font-geist mb-2 border border-black/5 rounded-full px-3 py-1 bg-white shadow-sm">
-          <Sparkles className="w-3.5 h-3.5" />
-          <span>Pricing</span>
-        </div>
-        <h2 className="text-5xl sm:text-6xl md:text-7xl text-black font-semibold tracking-tight leading-[1.05] font-geist">
+        <h2 className="text-5xl leading-[0.9] md:text-6xl text-black tracking-tighter font-geist font-medium">
           Hire with confidence
         </h2>
+        <p className="text-xl sm:text-2xl text-black/60 leading-relaxed max-w-3xl mx-auto font-geist tracking-tighter font-medium">
+          Not loving it after a week? Get 75% back, no questions asked.
+        </p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">

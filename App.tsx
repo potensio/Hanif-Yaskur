@@ -2,6 +2,7 @@ import React from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { FeaturedWork } from './components/FeaturedWork';
+import { WorkShowcase } from './components/WorkShowcase';
 import { Capabilities } from './components/Capabilities';
 import { DesignSmarter } from './components/DesignSmarter';
 import { IntelligentSystems } from './components/IntelligentSystems';
@@ -25,14 +26,11 @@ export default function App() {
         <main>
           <Hero />
           <FeaturedWork />
+          <WorkShowcase />
            <About />
           <Capabilities />
-
-      
-          
           <Testimonials />
-             <Pricing />
-       
+          <Pricing />
          
         </main>
         <Footer />

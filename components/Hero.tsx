@@ -5,10 +5,10 @@ export const Hero: React.FC = () => {
   return (
     <section className="max-w-7xl sm:px-8 mx-auto px-6">
       <div className="sm:py-20 lg:py-28 pt-14 pb-14">
-        <h1 className="sm:text-6xl lg:text-7xl leading-[1.05] text-4xl text-black font-geist tracking-tighter font-medium">
-          I'm Lio— a senior product designer
-          <span className="block text-black/40 font-geist tracking-tighter font-medium">
-            who crafts calm, responsible experiences for high‑impact teams
+        <h1 className="text-6xl lg:text-7xl text-black font-geist tracking-tighter font-medium">
+        I’m Hanif, a full-stack Product Engineer
+          <span className="block text-black/40 font-geist tracking-tighter">
+              From idea to live product — I design, build, and launch your product end to end.
           </span>
         </h1>
 
