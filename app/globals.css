@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .font-geist {
+    font-family: var(--font-geist), sans-serif !important;
+  }
+}

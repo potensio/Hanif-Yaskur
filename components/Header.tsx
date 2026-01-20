@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+"use client";
+
+import React, { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 const navItems = [
-  { label: 'Work', href: '#work' },
-  { label: 'Pricing', href: '#pricing' },
-  { label: 'About', href: '#about' },
-  { label: 'Contact', href: '#contact' },
+  { label: "Work", href: "#work" },
+  { label: "Pricing", href: "#pricing" },
+  { label: "About", href: "#about" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export const Header: React.FC = () => {
@@ -15,10 +17,13 @@ export const Header: React.FC = () => {
     <header className="">
       <div className="max-w-7xl sm:px-8 mx-auto px-6">
         <div className="flex h-16 items-center justify-between">
-          <a href="#" className="text-sm sm:text-base font-medium tracking-tight text-black font-geist">
+          <a
+            href="/"
+            className="text-sm sm:text-base font-medium tracking-tight text-black font-geist"
+          >
             LIO
           </a>
-          
+
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
@@ -39,7 +44,7 @@ export const Header: React.FC = () => {
             >
               Resume
             </button>
-            
+
             {/* Mobile Menu Button */}
             <button
               className="md:hidden inline-flex items-center justify-center rounded-lg border border-black/10 bg-white text-black/70 hover:bg-black/5 h-9 w-9 transition z-50"

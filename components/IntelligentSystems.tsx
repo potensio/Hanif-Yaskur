@@ -1,75 +1,48 @@
-import React, { useEffect } from 'react';
-import { Activity, ShieldCheck, Network, Flame, Diamond, Cpu, Code2 } from 'lucide-react';
+import React from "react";
+import Image from "next/image";
+import {
+  Activity,
+  ShieldCheck,
+  Network,
+  Flame,
+  Diamond,
+  Cpu,
+  Code2,
+} from "lucide-react";
 
 export const IntelligentSystems: React.FC = () => {
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animate");
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1 });
-
-    const elements = document.querySelectorAll(".animate-on-scroll");
-    elements.forEach((el) => observer.observe(el));
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <section className="bg-[#111] py-24 relative overflow-hidden">
-      <style>{`
-        @keyframes fadeSlideIn {
-          from { opacity: 0; transform: translateY(20px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-on-scroll { 
-          opacity: 0; 
-          animation-play-state: paused; 
-          animation-fill-mode: both;
-        }
-        .animate-on-scroll.animate { 
-          opacity: 1;
-          animation-play-state: running; 
-        }
-      `}</style>
-      
       {/* Subtle background gradient to add depth */}
       <div className="absolute inset-0 bg-gradient-to-b from-neutral-900 to-black pointer-events-none" />
 
       <div className="z-10 flex flex-col md:px-8 h-full max-w-7xl mx-auto pt-16 px-6 pb-16 relative gap-10 justify-center">
         <div className="max-w-3xl">
-          <h2 
-            className="sm:text-5xl lg:text-6xl animate-on-scroll text-4xl font-medium text-white tracking-tight font-geist drop-shadow-xl" 
-            style={{ animation: 'fadeSlideIn 1.0s ease-out 0.2s both' }}
-          >
+          <h2 className="sm:text-5xl lg:text-6xl text-4xl font-medium text-white tracking-tight font-geist drop-shadow-xl">
             Intelligent systems. Proven results.
           </h2>
-          <p 
-            className="sm:text-lg leading-relaxed animate-on-scroll text-base text-white/85 max-w-2xl mt-5 font-geist" 
-            style={{ animation: 'fadeSlideIn 1.0s ease-out 0.2s both' }}
-          >
-            Deploy AI solutions with complete confidence through advanced monitoring, human oversight, and transparent performance metrics—built for enterprise scale.
+          <p className="sm:text-lg leading-relaxed text-base text-white/85 max-w-2xl mt-5 font-geist">
+            Deploy AI solutions with complete confidence through advanced
+            monitoring, human oversight, and transparent performance
+            metrics—built for enterprise scale.
           </p>
         </div>
 
-        <div 
-          className="grid gap-6 lg:grid-cols-3 animate-on-scroll" 
-          style={{ animation: 'fadeSlideIn 1.0s ease-out 0.6s both' }}
-        >
+        <div className="grid gap-6 lg:grid-cols-3">
           {/* Analytics Card */}
           <div className="rounded-3xl border border-white/10 bg-black/60 p-6 backdrop-blur-xl">
             <div className="flex items-center justify-between">
-              <span className="text-xs uppercase tracking-[0.18em] text-white/60 font-geist">Performance metrics</span>
+              <span className="text-xs uppercase tracking-[0.18em] text-white/60 font-geist">
+                Performance metrics
+              </span>
               <span className="inline-flex items-center gap-1 rounded-full bg-white/5 px-2 py-1 text-[10px] text-white/70 ring-1 ring-white/10 font-geist">
                 <Activity className="h-3 w-3" /> Active
               </span>
             </div>
 
             <p className="mt-4 text-lg leading-relaxed text-white/90 font-geist">
-              Enterprise AI adoption increased by <span className="text-emerald-400">84%</span> this year
+              Enterprise AI adoption increased by{" "}
+              <span className="text-emerald-400">84%</span> this year
             </p>
 
             <div className="mt-6">
@@ -77,12 +50,20 @@ export const IntelligentSystems: React.FC = () => {
                 <div className="absolute inset-x-0 bottom-6 h-[2px] bg-white/10"></div>
                 <div className="absolute left-1/2 bottom-6 h-2 w-2 -translate-x-1/2 rounded-full bg-sky-400 shadow-[0_0_0_4px_rgba(56,189,248,0.15)]"></div>
                 <div className="absolute inset-x-0 top-4 flex justify-between px-2 text-[10px] text-white/50 font-geist">
-                  <span>2025</span><span>2024</span><span>2023</span><span>2022</span><span>2021</span>
+                  <span>2025</span>
+                  <span>2024</span>
+                  <span>2023</span>
+                  <span>2022</span>
+                  <span>2021</span>
                 </div>
               </div>
               <div className="mt-5">
-                <div className="text-4xl font-medium tracking-tight text-white font-geist">$45B</div>
-                <div className="text-sm text-white/60 font-geist">Market Value</div>
+                <div className="text-4xl font-medium tracking-tight text-white font-geist">
+                  $45B
+                </div>
+                <div className="text-sm text-white/60 font-geist">
+                  Market Value
+                </div>
               </div>
             </div>
           </div>
@@ -90,10 +71,12 @@ export const IntelligentSystems: React.FC = () => {
           {/* Face Detection Card */}
           <div className="rounded-3xl border border-white/10 bg-black/60 p-2 backdrop-blur-xl">
             <div className="relative overflow-hidden rounded-2xl bg-white/5">
-              <img 
-                src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/993d5154-c104-4507-8c0a-55364d2a948c_800w.jpg" 
-                alt="Identity verification" 
-                className="h-56 w-full object-cover sm:h-64" 
+              <Image
+                src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/993d5154-c104-4507-8c0a-55364d2a948c_800w.jpg"
+                alt="Identity verification"
+                width={800}
+                height={640}
+                className="h-56 w-full object-cover sm:h-64"
               />
               <div className="absolute inset-0 bg-[radial-gradient(60%_30%_at_50%_55%,rgba(163,230,53,0.25),transparent)]"></div>
 
@@ -112,8 +95,12 @@ export const IntelligentSystems: React.FC = () => {
               </div>
 
               <div className="p-4">
-                <div className="mt-2 text-base font-medium text-white/90 font-geist">Smart Recognition</div>
-                <div className="text-sm text-white/60 font-geist">Advanced Processing</div>
+                <div className="mt-2 text-base font-medium text-white/90 font-geist">
+                  Smart Recognition
+                </div>
+                <div className="text-sm text-white/60 font-geist">
+                  Advanced Processing
+                </div>
               </div>
             </div>
           </div>
@@ -121,11 +108,15 @@ export const IntelligentSystems: React.FC = () => {
           {/* Success Metrics Card */}
           <div className="rounded-3xl border border-white/10 bg-black/60 p-6 backdrop-blur-xl">
             <p className="text-lg leading-relaxed text-white/90 font-geist">
-              Achieving <span className="text-lime-400">92%</span> accuracy rate, our platform delivers consistent enterprise-grade performance.
+              Achieving <span className="text-lime-400">92%</span> accuracy
+              rate, our platform delivers consistent enterprise-grade
+              performance.
             </p>
 
             <div className="mt-6">
-              <div className="text-sm text-white/70 font-geist">Performance Overview</div>
+              <div className="text-sm text-white/70 font-geist">
+                Performance Overview
+              </div>
 
               <div className="mt-4 space-y-4">
                 {/* Succeed */}
@@ -173,10 +164,7 @@ export const IntelligentSystems: React.FC = () => {
         </div>
 
         {/* Logo row */}
-        <div 
-          className="flex flex-wrap text-white/50 mt-4 gap-x-8 gap-y-4 items-center animate-on-scroll font-geist" 
-          style={{ animation: 'fadeSlideIn 1.0s ease-out 0.8s both' }}
-        >
+        <div className="flex flex-wrap text-white/50 mt-4 gap-x-8 gap-y-4 items-center font-geist">
           <span className="inline-flex items-center gap-2 text-sm">
             <span className="flex h-6 w-6 items-center justify-center rounded-full bg-white/5 ring-1 ring-white/10">
               <Network className="h-3.5 w-3.5" />
