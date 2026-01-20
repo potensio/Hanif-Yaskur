@@ -142,7 +142,7 @@ export const FeaturedWork: React.FC = () => {
                       height={item.type === "landscape" ? 315 : 400}
                       className="w-full h-auto object-cover block"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                   </div>
                 </div>
               );
@@ -151,7 +151,7 @@ export const FeaturedWork: React.FC = () => {
         </div>
 
         {/* Gradient overlays to smooth edges */}
-        <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-gray-100 to-transparent pointer-events-none" />
+        <div className="absolute inset-x-0 bottom-0 h-32 bg-linear-to-t from-gray-100 to-transparent pointer-events-none" />
       </div>
     </section>
   );

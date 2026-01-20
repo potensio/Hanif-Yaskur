@@ -6,18 +6,18 @@ export const Capabilities: React.FC = () => {
   return (
     <section className="max-w-7xl sm:px-8 mx-auto px-6 py-24">
       <div className="relative overflow-hidden rounded-[32px] bg-white border border-black/10 shadow-2xl">
-        <div className="relative z-10 px-5 py-5 sm:p-12">
-          <div className="flex items-start justify-between mb-8 sm:mb-12">
+        <div className="relative z-10 p-8 sm:p-12">
+          <div className="flex items-start justify-between mb-10 sm:mb-12">
             <div className="flex items-center gap-2 text-black/80 text-xs font-geist">
               <Sparkles className="w-3.5 h-3.5" />
               <span>What we do</span>
             </div>
-            <h2 className="text-3xl md:text-5xl text-black font-medium tracking-tight leading-[0.9] font-geist">
+            <h2 className="text-5xl text-black font-medium tracking-tight leading-[0.9] font-geist">
               Capabilities.
             </h2>
           </div>
 
-          <div className="bg-linear-to-b from-neutral-700 to-neutral-900 rounded-2xl ring-1 ring-white/10 overflow-hidden shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]">
+          <div className="bg-linear-to-b from-neutral-700 to-neutral-900 rounded-2xl ring-1 ring-white/10 overflow-hidden shadow-[0_2.8px_2.2px_rgba(0,0,0,0.034),0_6.7px_5.3px_rgba(0,0,0,0.048),0_12.5px_10px_rgba(0,0,0,0.06),0_22.3px_17.9px_rgba(0,0,0,0.072),0_41.8px_33.4px_rgba(0,0,0,0.086),0_100px_80px_rgba(0,0,0,0.12)]">
             {/* 001 */}
             <details className="group open:bg-white/5" open>
               <summary className="list-none cursor-pointer [&::-webkit-details-marker]:hidden">

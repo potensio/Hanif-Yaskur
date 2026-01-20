@@ -7,11 +7,11 @@ import { Testimonials } from "@/components/Testimonials";
 import { Pricing } from "@/components/Pricing";
 import { About } from "@/components/About";
 import { Footer } from "@/components/Footer";
-import { FooterNew } from "@/components/FooterNew";
 
 export default function Home() {
   return (
     <div className="min-h-screen relative bg-gray-100">
+      {/* Hero Background */}
       <div className="absolute top-0 w-full z-0 h-[1000px] blur-3xl overflow-hidden">
         <Image
           src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/55089b0e-fd30-4b07-881c-69dd9c26979b_3840w.jpg"
@@ -36,7 +36,8 @@ export default function Home() {
             <Pricing />
           </section>
         </main>
-        <FooterNew />
+
+        <Footer />
       </div>
     </div>
   );
