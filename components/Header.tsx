@@ -18,13 +18,15 @@ export const Header: React.FC = () => {
     <header className="">
       <div className="max-w-7xl sm:px-8 mx-auto px-6">
         <div className="flex h-16 items-center justify-between">
-          <Image
-            src="/hanif-logo.png"
-            height={28}
-            width={28}
-            alt="logo"
-            className="h-fit"
-          />
+          <a href="/">
+            <Image
+              src="/hanif-logo.png"
+              height={28}
+              width={28}
+              alt="logo"
+              className="h-fit"
+            />
+          </a>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
