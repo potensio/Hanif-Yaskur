@@ -21,7 +21,7 @@ export const Pricing: React.FC = () => {
         <div className="overflow-hidden bg-white border border-black/10 rounded-[28px] relative shadow-sm flex flex-col h-full group hover:shadow-lg transition-shadow duration-300">
           <div className="p-4 flex flex-col h-full">
             {/* Inner Header Container with Shadow */}
-            <div className="flex flex-col p-6 bg-gray-50 border border-black/5 rounded-2xl shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)] gap-4 items-start h-[180px]">
+            <div className="flex flex-col p-6 bg-gray-50 border border-black/5 rounded-2xl shadow-[0_2.8px_2.2px_rgba(0,0,0,0.034),0_6.7px_5.3px_rgba(0,0,0,0.048),0_12.5px_10px_rgba(0,0,0,0.06),0_22.3px_17.9px_rgba(0,0,0,0.072),0_41.8px_33.4px_rgba(0,0,0,0.086),0_100px_80px_rgba(0,0,0,0.12)] gap-4 items-start h-[180px]">
               <div className="space-y-1">
                 <h3 className="text-2xl text-gray-900 font-geist font-light tracking-tighter">Part-time</h3>
                 <p className="text-sm text-gray-600 font-geist">Perfect for maintenance and small updates.</p>
@@ -114,7 +114,7 @@ export const Pricing: React.FC = () => {
         <div className="overflow-hidden bg-white border border-black/10 rounded-[28px] relative shadow-sm flex flex-col h-full group hover:shadow-lg transition-shadow duration-300">
           <div className="p-4 flex flex-col h-full">
             {/* Inner Header Container with Shadow */}
-            <div className="flex flex-col p-6 bg-gray-50 border border-black/5 rounded-2xl shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)] gap-4 items-start h-[180px]">
+            <div className="flex flex-col p-6 bg-gray-50 border border-black/5 rounded-2xl shadow-[0_2.8px_2.2px_rgba(0,0,0,0.034),0_6.7px_5.3px_rgba(0,0,0,0.048),0_12.5px_10px_rgba(0,0,0,0.06),0_22.3px_17.9px_rgba(0,0,0,0.072),0_41.8px_33.4px_rgba(0,0,0,0.086),0_100px_80px_rgba(0,0,0,0.12)] gap-4 items-start h-[180px]">
               <div className="space-y-1">
                 <h3 className="text-2xl text-gray-900 font-geist font-light tracking-tighter">Project</h3>
                 <p className="text-sm text-gray-600 font-geist">Fixed scope, fixed price. For specific deliverables.</p>

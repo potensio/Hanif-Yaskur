@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const navItems = [
   { label: "Work", href: "#work" },
@@ -17,12 +18,13 @@ export const Header: React.FC = () => {
     <header className="">
       <div className="max-w-7xl sm:px-8 mx-auto px-6">
         <div className="flex h-16 items-center justify-between">
-          <a
-            href="/"
-            className="text-sm sm:text-base font-medium tracking-tight text-black font-geist"
-          >
-            LIO
-          </a>
+          <Image
+            src="/hanif-logo.png"
+            height={28}
+            width={28}
+            alt="logo"
+            className="h-fit"
+          />
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
@@ -39,7 +41,7 @@ export const Header: React.FC = () => {
 
           <div className="flex items-center gap-2">
             <button
-              className="cursor-pointer inline-flex flex-col leading-none outline-none overflow-hidden no-underline align-baseline whitespace-nowrap select-none transition-all duration-150 hover:opacity-85 focus:outline-none focus:ring-4 focus:ring-black/50 max-sm:h-12 shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)] text-sm text-white text-center bg-gradient-to-b from-neutral-700 to-neutral-900 border-0 rounded-xl pt-2 pr-5 pb-2 pl-5 items-center justify-center font-geist"
+              className="cursor-pointer inline-flex flex-col leading-none outline-none overflow-hidden no-underline align-baseline whitespace-nowrap select-none transition-all duration-150 hover:opacity-85 focus:outline-none focus:ring-4 focus:ring-black/50 max-sm:h-12 shadow-[0_2.8px_2.2px_rgba(0,0,0,0.034),0_6.7px_5.3px_rgba(0,0,0,0.048),0_12.5px_10px_rgba(0,0,0,0.06),0_22.3px_17.9px_rgba(0,0,0,0.072),0_41.8px_33.4px_rgba(0,0,0,0.086),0_100px_80px_rgba(0,0,0,0.12)] text-sm text-white text-center bg-linear-to-b from-neutral-700 to-neutral-900 border-0 rounded-xl pt-2 pr-5 pb-2 pl-5 items-center justify-center font-geist"
               role="button"
             >
               Resume

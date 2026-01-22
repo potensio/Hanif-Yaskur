@@ -14,7 +14,7 @@ export const IntelligentSystems: React.FC = () => {
   return (
     <section className="bg-[#111] py-24 relative overflow-hidden">
       {/* Subtle background gradient to add depth */}
-      <div className="absolute inset-0 bg-gradient-to-b from-neutral-900 to-black pointer-events-none" />
+      <div className="absolute inset-0 bg-linear-to-b from-neutral-900 to-black pointer-events-none" />
 
       <div className="z-10 flex flex-col md:px-8 h-full max-w-7xl mx-auto pt-16 px-6 pb-16 relative gap-10 justify-center">
         <div className="max-w-3xl">
@@ -46,7 +46,7 @@ export const IntelligentSystems: React.FC = () => {
             </p>
 
             <div className="mt-6">
-              <div className="relative h-24 w-full rounded-lg bg-gradient-to-b from-white/[0.03] to-transparent">
+              <div className="relative h-24 w-full rounded-lg bg-linear-to-b from-white/3 to-transparent">
                 <div className="absolute inset-x-0 bottom-6 h-[2px] bg-white/10"></div>
                 <div className="absolute left-1/2 bottom-6 h-2 w-2 -translate-x-1/2 rounded-full bg-sky-400 shadow-[0_0_0_4px_rgba(56,189,248,0.15)]"></div>
                 <div className="absolute inset-x-0 top-4 flex justify-between px-2 text-[10px] text-white/50 font-geist">
@@ -87,7 +87,7 @@ export const IntelligentSystems: React.FC = () => {
 
               {/* Grid lines */}
               <div className="pointer-events-none absolute inset-0 grid grid-cols-6 grid-rows-6">
-                <div className="col-span-6 row-span-6 [background-image:linear-gradient(to_right,rgba(255,255,255,0.12)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.12)_1px,transparent_1px)] [background-size:16.666%_100%,100%_16.666%]"></div>
+                <div className="col-span-6 row-span-6 bg-[linear-gradient(to_right,rgba(255,255,255,0.12)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.12)_1px,transparent_1px)] bg-size-[16.666%_100%,100%_16.666%]"></div>
               </div>
 
               <div className="absolute left-4 top-4 rounded-md bg-black/60 px-2 py-1 text-xs text-white/85 ring-1 ring-white/10 font-geist">
@@ -126,7 +126,7 @@ export const IntelligentSystems: React.FC = () => {
                     <span className="text-base text-white/90">78%</span>
                   </div>
                   <div className="mt-2 h-3 w-full rounded-full bg-white/10">
-                    <div className="h-3 w-[78%] rounded-full bg-gradient-to-r from-emerald-400 to-emerald-500"></div>
+                    <div className="h-3 w-[78%] rounded-full bg-linear-to-r from-emerald-400 to-emerald-500"></div>
                   </div>
                 </div>
 
@@ -137,7 +137,7 @@ export const IntelligentSystems: React.FC = () => {
                     <span className="text-base text-white/90">14%</span>
                   </div>
                   <div className="mt-2 h-3 w-full rounded-full bg-white/10">
-                    <div className="h-3 w-[14%] rounded-full bg-gradient-to-r from-sky-400 to-blue-500"></div>
+                    <div className="h-3 w-[14%] rounded-full bg-linear-to-r from-sky-400 to-blue-500"></div>
                   </div>
                 </div>
 

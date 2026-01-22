@@ -28,11 +28,11 @@ export const Footer: React.FC = () => {
             <div className="flex flex-col max-w-lg">
               {/* Logo */}
               <Image
-                src="/hanif-logo.png"
+                src="/hanif-logo-with-text.png"
                 height={80}
-                width={80}
+                width={96}
                 alt="logo"
-                className="size-10 mb-10"
+                className="max-h-20 mb-10"
               />
               <h1 className="text-5xl md:text-7xl font-medium mb-4 tracking-tighter">
                 See if Hanif is the right fit for you{" "}
@@ -44,7 +44,7 @@ export const Footer: React.FC = () => {
 
             {/* Right side */}
             <div
-              className="w-full max-w-sm p-6 md:p-8 bg-cover bg-center rounded-4xl shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]"
+              className="w-full max-w-sm p-6 md:p-8 bg-cover bg-center rounded-4xl shadow-[0_2.8px_2.2px_rgba(0,0,0,0.034),0_6.7px_5.3px_rgba(0,0,0,0.048),0_12.5px_10px_rgba(0,0,0,0.06),0_22.3px_17.9px_rgba(0,0,0,0.072),0_41.8px_33.4px_rgba(0,0,0,0.086),0_100px_80px_rgba(0,0,0,0.12)]"
               style={{ backgroundImage: "url(/contact-bg.png)" }}
             >
               <div className="flex flex-col gap-6">
@@ -54,12 +54,12 @@ export const Footer: React.FC = () => {
                   height={80}
                   width={80}
                   alt="email icon"
-                  className="h-full object-contain rounded-2xl border-3 border-white rotate-[-2deg]"
+                  className="h-full object-contain rounded-2xl border-3 border-white -rotate-2"
                 />
                 <p className="text-3xl md:text-4xl font-medium">
                   Book a 15-min <br /> intro call
                 </p>
-                <button className="h-12 md:h-14 text-white text-lg md:text-xl rounded-2xl bg-gradient-to-br from-gray-700 to-gray-500 shadow-[inset_0_0_1.6em_-0.6em_rgb(75,85,99)]">
+                <button className="h-12 md:h-14 text-white text-lg md:text-xl rounded-2xl bg-linear-to-br from-gray-700 to-gray-500 shadow-[inset_0_0_1.6em_-0.6em_rgb(75,85,99)]">
                   Book a call
                 </button>
               </div>
