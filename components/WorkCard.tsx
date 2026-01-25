@@ -21,7 +21,7 @@ export const WorkCard: React.FC<WorkCardProps> = ({ project }) => {
           height={600}
           className={`aspect-4/3 object-cover`}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none"></div>
+        <div className="absolute inset-0 bg-linear-to-t from-black/20 via-transparent to-transparent pointer-events-none"></div>
       </div>
       <div className="p-6">
         <div className="flex items-start justify-between gap-4">

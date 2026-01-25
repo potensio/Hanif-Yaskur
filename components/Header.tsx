@@ -42,12 +42,13 @@ export const Header: React.FC = () => {
           </nav>
 
           <div className="flex items-center gap-2">
-            <button
+            <a
+              href="#contact"
               className="cursor-pointer inline-flex flex-col leading-none outline-none overflow-hidden no-underline align-baseline whitespace-nowrap select-none transition-all duration-150 hover:opacity-85 focus:outline-none focus:ring-4 focus:ring-black/50 max-sm:h-10 shadow-[0_2.8px_2.2px_rgba(0,0,0,0.034),0_6.7px_5.3px_rgba(0,0,0,0.048),0_12.5px_10px_rgba(0,0,0,0.06),0_22.3px_17.9px_rgba(0,0,0,0.072),0_41.8px_33.4px_rgba(0,0,0,0.086),0_100px_80px_rgba(0,0,0,0.12)] text-sm text-white text-center bg-linear-to-b from-neutral-700 to-neutral-900 border-0 rounded-xl pt-2 pr-5 pb-2 pl-5 items-center justify-center font-geist"
               role="button"
             >
               Hire me
-            </button>
+            </a>
 
             {/* Mobile Menu Button */}
             <button

@@ -15,7 +15,7 @@ export const Hero: React.FC = () => {
 
         <div className="flex gap-3 mt-10 items-center">
           <a
-            href="#work"
+            href="#about"
             className="group inline-flex items-center gap-2 transition relative overflow-hidden text-sm font-medium text-white ring-white/10 ring-1 rounded-2xl font-geist"
             style={{
               background:

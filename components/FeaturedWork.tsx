@@ -3,72 +3,36 @@ import Image from "next/image";
 
 const originalItems = [
   {
-    src: "https://framerusercontent.com/images/evU67uSZvL2kO6Z6ZGKdBeximSk.png?scale-down-to=512",
+    src: "/porto-1.jpg",
     type: "landscape",
   },
   {
-    src: "https://framerusercontent.com/images/tA7B9RI0y99pir7CKtvpH5uAdug.png?scale-down-to=512",
+    src: "/porto-2.jpg",
     type: "landscape",
   },
   {
-    src: "https://framerusercontent.com/images/jVDl5HO0z4gyoEYfe0rwDf1ur58.png",
+    src: "/porto-3.jpg",
+    type: "landscape",
+  },
+  {
+    src: "/porto-4.jpg",
     type: "portrait",
   },
   {
-    src: "https://framerusercontent.com/images/aRoulX1aLKEfQd1DOFY4Ar3DgA.png?scale-down-to=512",
-    type: "landscape",
-  },
-  {
-    src: "https://framerusercontent.com/images/bss2LIEllxXdIcD6Lb553GxIik.png?scale-down-to=512",
-    type: "landscape",
-  },
-  {
-    src: "https://framerusercontent.com/images/odWeSe2QUlwRjdsQ61D5Q0gZX6c.png?scale-down-to=1024",
+    src: "/porto-5.jpg",
     type: "portrait",
   },
   {
-    src: "https://framerusercontent.com/images/oUG1LmhwhjU0XdKdnVrLf5AmoC0.png?scale-down-to=512",
+    src: "/porto-6.jpg",
     type: "landscape",
   },
   {
-    src: "https://framerusercontent.com/images/tIPzcpCesqeVPRb38ZNGOJLKGI.png?scale-down-to=512",
+    src: "/porto-7.jpg",
     type: "landscape",
   },
   {
-    src: "https://framerusercontent.com/images/NiFJCDg94sN8rHw0ulZKwXTlHic.png",
-    type: "portrait",
-  },
-  {
-    src: "https://framerusercontent.com/images/NRpw9EoNtgJi2kVSPioWqFXIL3M.png?scale-down-to=512",
+    src: "/porto-8.jpg",
     type: "landscape",
-  },
-  {
-    src: "https://framerusercontent.com/images/ImUQs4uyswhIxTXNWyBllppgk.png?scale-down-to=512",
-    type: "landscape",
-  },
-  {
-    src: "https://framerusercontent.com/images/Jxpx5B5BHGyK7RNPztjPTBqyZ8.png?scale-down-to=1024",
-    type: "portrait",
-  },
-  {
-    src: "https://framerusercontent.com/images/nQWDD26enQ4GXB5fuHb0YIqQ.png?scale-down-to=512",
-    type: "landscape",
-  },
-  {
-    src: "https://framerusercontent.com/images/t0OLz4A2rRj5WVgX8GLaUdMkOdI.png?scale-down-to=1024",
-    type: "portrait",
-  },
-  {
-    src: "https://framerusercontent.com/images/JjdtqoiJI9DUoGIJz3sGo0S1oU.png?scale-down-to=512",
-    type: "landscape",
-  },
-  {
-    src: "https://framerusercontent.com/images/1nDXaTm3DiO0VOT0d0hTrzdqcLg.png?scale-down-to=1024",
-    type: "portrait",
-  },
-  {
-    src: "https://framerusercontent.com/images/7N7nlw0OKvZQYrAqG2sWCwCpBQI.png?scale-down-to=1024",
-    type: "portrait",
   },
 ];
 
@@ -97,16 +61,16 @@ export const FeaturedWork: React.FC = () => {
             to { transform: translateX(-50%) rotate(360deg); }
           }
           .animate-spin-wheel {
-            animation: spin-slow 120s linear infinite;
+            animation: spin-slow 60s linear infinite;
             will-change: transform;
           }
           .wheel-origin {
             /* Negative Y puts the pivot high above, creating a concave 'bowl' shape (Smile U) */
-            transform-origin: 50% -2800px; 
+            transform-origin: 50% -2000px; 
           }
           @media (min-width: 768px) {
             .wheel-origin {
-               transform-origin: 50% -3200px;
+               transform-origin: 50% -2000px;
             }
           }
         `}</style>
@@ -132,7 +96,7 @@ export const FeaturedWork: React.FC = () => {
                   <div
                     className="relative rounded-xl overflow-hidden shadow-lg border border-white/40 bg-white ring-1 ring-black/5 transform transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl cursor-pointer"
                     style={{
-                      width: item.type === "landscape" ? "420px" : "200px",
+                      width: item.type === "landscape" ? "480px" : "240px",
                     }}
                   >
                     <Image

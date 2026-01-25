@@ -10,22 +10,40 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Hanif — Product Engineer",
+  title: "Hanif — Full-Stack Product Engineer | MVP & AI SaaS Development",
   description:
-    "Portfolio of Hanif, a product engineer specializing in intelligent systems and user-centered design.",
-  metadataBase: new URL("https://yourdomain.com"),
+    "Build your MVP with a Jakarta-based full-stack product engineer. Specializing in AI SaaS development, Next.js, and end-to-end product development for startups.",
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_BASE_URL || "https://yourdomain.com",
+  ),
+  keywords: [
+    "build MVP",
+    "MVP development",
+    "startup product engineer",
+    "Next.js developer for startup",
+    "AI SaaS developer",
+    "hire product engineer",
+    "full-stack developer Jakarta",
+    "AI integration developer",
+    "product development engineer",
+    "end-to-end product development",
+    "startup MVP builder",
+    "AI-powered web applications",
+  ],
+  authors: [{ name: "Hanif" }],
+  creator: "Hanif",
   openGraph: {
-    title: "Lio — Product Designer",
+    title: "Hanif — Full-Stack Product Engineer | MVP & AI SaaS Development",
     description:
-      "Portfolio of Lio, a product designer specializing in intelligent systems and user-centered design.",
-    url: "https://yourdomain.com",
-    siteName: "Lio Portfolio",
+      "Build your MVP with a Jakarta-based product engineer. Specializing in AI SaaS development, Next.js, and end-to-end product development for startups.",
+    url: process.env.NEXT_PUBLIC_BASE_URL || "https://yourdomain.com",
+    siteName: "Hanif Portfolio",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Lio Portfolio",
+        alt: "Hanif — Full-Stack Product Engineer",
       },
     ],
     locale: "en_US",
@@ -33,10 +51,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lio — Product Designer",
+    title: "Hanif — Full-Stack Product Engineer | MVP & AI SaaS Development",
     description:
-      "Portfolio of Lio, a product designer specializing in intelligent systems and user-centered design.",
+      "Build your MVP with a Jakarta-based product engineer. Specializing in AI SaaS development, Next.js, and end-to-end product development for startups.",
     images: ["/og-image.png"],
+    creator: "@hanifyaskur",
   },
   robots: {
     index: true,
@@ -59,15 +78,30 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Lio",
-    jobTitle: "Product Designer",
-    url: "https://yourdomain.com",
+    name: "Hanif",
+    jobTitle: "Full-Stack Product Engineer",
+    url: process.env.NEXT_PUBLIC_BASE_URL || "https://yourdomain.com",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Jakarta",
+      addressCountry: "ID",
+    },
+    email: "hanifyaskur@gmail.com",
     sameAs: [
-      "https://twitter.com/yourhandle",
-      "https://linkedin.com/in/yourprofile",
+      "https://twitter.com/hanifyaskur",
+      "https://linkedin.com/in/hanifyaskur",
     ],
     description:
-      "Product designer specializing in intelligent systems and user-centered design.",
+      "Full-stack Product Engineer based in Jakarta. Specializing in MVP development, AI SaaS applications, and Next.js development for startups.",
+    knowsAbout: [
+      "MVP Development",
+      "AI SaaS Development",
+      "Full-Stack Development",
+      "Next.js Development",
+      "Product Engineering",
+      "Startup Development",
+      "AI Integration",
+    ],
   };
 
   return (

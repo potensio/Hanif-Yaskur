@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Plus, Minus, HelpCircle } from "lucide-react";
+import { Plus, Minus } from "lucide-react";
 
 export const FAQ: React.FC = () => {
   return (
@@ -23,7 +23,7 @@ export const FAQ: React.FC = () => {
               <div className="flex items-center gap-4 justify-between border-b border-black/5 p-4 sm:p-5">
                 <div className="flex-1 min-w-0">
                   <p className="text-black text-lg sm:text-xl font-medium tracking-tight font-geist">
-                    Do you build with code or no-code?
+                    What kind of projects do you build?
                   </p>
                 </div>
                 <div className="shrink-0 h-8 w-8 rounded-full bg-black/5 ring-1 ring-black/10 flex items-center justify-center text-black transition-colors group-hover:bg-black/10">
@@ -34,41 +34,16 @@ export const FAQ: React.FC = () => {
             </summary>
             <div className="p-4 sm:p-6 animate-in slide-in-from-top-2 duration-200">
               <p className="text-black/70 text-sm sm:text-base max-w-[90ch] font-geist">
-                I do both! I build custom solutions with code (TypeScript,
-                React, Next.js, etc.) and also offer low-code development using
-                Bubble. Bubble is my preferred low-code platform because it
-                covers the full stack and allows for rapid, scalable
-                development—perfect for MVPs and fast iterations.
+                I build web applications, mobile apps (iOS & Android), Chrome
+                extensions, and backend systems for startups, small businesses,
+                and entrepreneurs. Whether you need an MVP, a customer portal,
+                workflow automation, or API integrations—I can help bring it to
+                life.
               </p>
             </div>
           </details>
 
           {/* Q2 */}
-          <details className="group">
-            <summary className="list-none cursor-pointer [&::-webkit-details-marker]:hidden">
-              <div className="flex items-center gap-4 justify-between border-t border-b border-black/5 p-4 sm:p-5">
-                <div className="flex-1 min-w-0">
-                  <p className="text-black text-lg sm:text-xl font-medium tracking-tight font-geist">
-                    What kind of projects do you take on?
-                  </p>
-                </div>
-                <div className="shrink-0 h-8 w-8 rounded-full bg-black/5 ring-1 ring-black/10 flex items-center justify-center text-black transition-colors group-hover:bg-black/10">
-                  <Plus className="w-4 h-4 group-open:hidden" />
-                  <Minus className="w-4 h-4 hidden group-open:block" />
-                </div>
-              </div>
-            </summary>
-            <div className="p-4 sm:p-6 animate-in slide-in-from-top-2 duration-200">
-              <p className="text-black/70 text-sm sm:text-base max-w-[90ch] font-geist">
-                I specialize in building custom web applications, automating
-                workflows, and integrating tools for startups, small businesses,
-                and entrepreneurs. Whether you need a new product, an MVP, or
-                want to automate repetitive tasks, I can help.
-              </p>
-            </div>
-          </details>
-
-          {/* Q3 */}
           <details className="group">
             <summary className="list-none cursor-pointer [&::-webkit-details-marker]:hidden">
               <div className="flex items-center gap-4 justify-between border-t border-b border-black/5 p-4 sm:p-5">
@@ -92,31 +67,7 @@ export const FAQ: React.FC = () => {
             </div>
           </details>
 
-          {/* Q4 */}
-          <details className="group">
-            <summary className="list-none cursor-pointer [&::-webkit-details-marker]:hidden">
-              <div className="flex items-center gap-4 justify-between border-t border-b border-black/5 p-4 sm:p-5">
-                <div className="flex-1 min-w-0">
-                  <p className="text-black text-lg sm:text-xl font-medium tracking-tight font-geist">
-                    What technologies do you use?
-                  </p>
-                </div>
-                <div className="shrink-0 h-8 w-8 rounded-full bg-black/5 ring-1 ring-black/10 flex items-center justify-center text-black transition-colors group-hover:bg-black/10">
-                  <Plus className="w-4 h-4 group-open:hidden" />
-                  <Minus className="w-4 h-4 hidden group-open:block" />
-                </div>
-              </div>
-            </summary>
-            <div className="p-4 sm:p-6 animate-in slide-in-from-top-2 duration-200">
-              <p className="text-black/70 text-sm sm:text-base max-w-[90ch] font-geist">
-                I use modern, proven technologies like TypeScript, React,
-                Next.js, Neon or Supabase. For automation, I connect tools using
-                n8n, OpenAI, Zapier, Google Workspace, Notion, and more.
-              </p>
-            </div>
-          </details>
-
-          {/* Q5 */}
+          {/* Q3 */}
           <details className="group">
             <summary className="list-none cursor-pointer [&::-webkit-details-marker]:hidden">
               <div className="flex items-center gap-4 justify-between border-t border-b border-black/5 p-4 sm:p-5">
@@ -133,38 +84,16 @@ export const FAQ: React.FC = () => {
             </summary>
             <div className="p-4 sm:p-6 animate-in slide-in-from-top-2 duration-200">
               <p className="text-black/70 text-sm sm:text-base max-w-[90ch] font-geist">
-                I offer both hourly ($24/hr) and project-based pricing (starting
-                from $3800). Hourly is great for ongoing or flexible work;
-                project-based is best for well-defined scopes. Every project
-                comes with transparent estimates and no hidden fees.
+                I offer both hourly ($30/hr) and one-off project pricing
+                (starting from $2,000). Hourly is great for small tasks or
+                ongoing work; project-based is best for complete projects with
+                defined scopes. Every project comes with transparent estimates
+                and no hidden fees.
               </p>
             </div>
           </details>
 
-          {/* Q6 */}
-          <details className="group">
-            <summary className="list-none cursor-pointer [&::-webkit-details-marker]:hidden">
-              <div className="flex items-center gap-4 justify-between border-t border-b border-black/5 p-4 sm:p-5">
-                <div className="flex-1 min-w-0">
-                  <p className="text-black text-lg sm:text-xl font-medium tracking-tight font-geist">
-                    Can I pause or stop anytime?
-                  </p>
-                </div>
-                <div className="shrink-0 h-8 w-8 rounded-full bg-black/5 ring-1 ring-black/10 flex items-center justify-center text-black transition-colors group-hover:bg-black/10">
-                  <Plus className="w-4 h-4 group-open:hidden" />
-                  <Minus className="w-4 h-4 hidden group-open:block" />
-                </div>
-              </div>
-            </summary>
-            <div className="p-4 sm:p-6 animate-in slide-in-from-top-2 duration-200">
-              <p className="text-black/70 text-sm sm:text-base max-w-[90ch] font-geist">
-                Absolutely! You're free to pause or stop the project at any
-                time—no long-term contracts, no lock-ins, and no pressure.
-              </p>
-            </div>
-          </details>
-
-          {/* Q7 */}
+          {/* Q4 */}
           <details className="group">
             <summary className="list-none cursor-pointer [&::-webkit-details-marker]:hidden">
               <div className="flex items-center gap-4 justify-between border-t border-b border-black/5 p-4 sm:p-5">
@@ -189,7 +118,7 @@ export const FAQ: React.FC = () => {
             </div>
           </details>
 
-          {/* Q8 */}
+          {/* Q5 */}
           <details className="group">
             <summary className="list-none cursor-pointer [&::-webkit-details-marker]:hidden">
               <div className="flex items-center gap-4 justify-between border-t border-b border-black/5 p-4 sm:p-5">
@@ -206,38 +135,15 @@ export const FAQ: React.FC = () => {
             </summary>
             <div className="p-4 sm:p-6 animate-in slide-in-from-top-2 duration-200">
               <p className="text-black/70 text-sm sm:text-base max-w-[90ch] font-geist">
-                Yes! For projects over $2,000, I offer a 14-day warranty after
-                delivery. If you find any issues or need tweaks, I'll fix them
-                at no extra cost during this period.
+                Yes! For projects over $1K, I offer a 14-day (or 30 days for
+                projects over $2K) warranty after delivery. If you find any
+                issues or need tweaks, I'll fix them at no extra cost during
+                this period.
               </p>
             </div>
           </details>
 
-          {/* Q9 */}
-          <details className="group">
-            <summary className="list-none cursor-pointer [&::-webkit-details-marker]:hidden">
-              <div className="flex items-center gap-4 justify-between border-t border-b border-black/5 p-4 sm:p-5">
-                <div className="flex-1 min-w-0">
-                  <p className="text-black text-lg sm:text-xl font-medium tracking-tight font-geist">
-                    Can you automate my business processes?
-                  </p>
-                </div>
-                <div className="shrink-0 h-8 w-8 rounded-full bg-black/5 ring-1 ring-black/10 flex items-center justify-center text-black transition-colors group-hover:bg-black/10">
-                  <Plus className="w-4 h-4 group-open:hidden" />
-                  <Minus className="w-4 h-4 hidden group-open:block" />
-                </div>
-              </div>
-            </summary>
-            <div className="p-4 sm:p-6 animate-in slide-in-from-top-2 duration-200">
-              <p className="text-black/70 text-sm sm:text-base max-w-[90ch] font-geist">
-                Absolutely. I can automate repetitive tasks, connect your
-                favorite tools, and set up workflows that save you time and
-                reduce errors. Let's talk about what you want to automate!
-              </p>
-            </div>
-          </details>
-
-          {/* Q10 */}
+          {/* Q6 */}
           <details className="group">
             <summary className="list-none cursor-pointer [&::-webkit-details-marker]:hidden">
               <div className="flex items-center gap-4 justify-between border-t border-b border-black/5 p-4 sm:p-5">

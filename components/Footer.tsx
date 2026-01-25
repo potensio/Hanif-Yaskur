@@ -1,21 +1,17 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import {
-  BadgeCheck,
-  Check,
-  Mail,
-  Phone,
-  Send,
-  Twitter,
-  Linkedin,
-  Dribbble,
-  ArrowUp,
-  ArrowRight,
-  X,
-} from "lucide-react";
+import { ArrowRight, Twitter, Linkedin } from "lucide-react";
 
 export const Footer: React.FC = () => {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText("hanifyaskur@gmail.com");
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
     <footer
       id="contact"
@@ -60,9 +56,14 @@ export const Footer: React.FC = () => {
                 <p className="text-3xl md:text-4xl font-medium">
                   Book a 15-min <br /> intro call
                 </p>
-                <button className="h-12 md:h-14 text-white text-lg md:text-xl rounded-2xl bg-linear-to-br from-gray-700 to-gray-500 shadow-[inset_0_0_1.6em_-0.6em_rgb(75,85,99)]">
+                <a
+                  href="https://cal.com/hanifyaskur/intro-call"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="h-12 md:h-14 text-white text-lg md:text-xl rounded-2xl bg-linear-to-br from-gray-700 to-gray-500 shadow-[inset_0_0_1.6em_-0.6em_rgb(75,85,99)] flex items-center justify-center hover:from-gray-600 hover:to-gray-400 transition-all active:scale-[0.98]"
+                >
                   Book a call
-                </button>
+                </a>
               </div>
               <div className="flex  justify-between items-center gap-4 leading-tight py-6">
                 <Image
@@ -80,8 +81,18 @@ export const Footer: React.FC = () => {
                     hanifyaskur@gmail.com
                   </p>
                 </div>
-                <button className="flex shrink-0 items-center justify-center bg-white rounded-full size-8 ">
-                  <ArrowRight className="size-4" />
+                <button
+                  onClick={handleCopyEmail}
+                  className="flex shrink-0 items-center justify-center bg-white rounded-full size-8 hover:bg-gray-100 transition-colors active:scale-95 relative"
+                  aria-label="Copy email address"
+                >
+                  {copied ? (
+                    <span className="text-xs font-medium text-green-600">
+                      ✓
+                    </span>
+                  ) : (
+                    <ArrowRight className="size-4" />
+                  )}
                 </button>
               </div>
               <div className="mt-3 flex items-center gap-3 pt-6 border-t border-neutral-900/10 justify-center">
@@ -105,13 +116,19 @@ export const Footer: React.FC = () => {
 
           <div className="mt-10 pt-6 border-t border-black/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <div className="flex items-center gap-4 text-black/60 text-sm font-geist">
-              <a href="#" className="hover:text-black transition font-geist">
+              <a
+                href="/privacy-policy"
+                className="hover:text-black transition font-geist"
+              >
                 Privacy
               </a>
               <span className="hidden sm:block text-black/20 font-geist">
                 •
               </span>
-              <a href="#" className="hover:text-black transition font-geist">
+              <a
+                href="/terms-conditions"
+                className="hover:text-black transition font-geist"
+              >
                 Terms
               </a>
               <span className="hidden sm:block text-black/20 font-geist">
