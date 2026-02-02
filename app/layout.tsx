@@ -13,9 +13,10 @@ export const metadata: Metadata = {
   title: "Hanif — Solo Product Engineer Using AI | MVP & SaaS Development",
   description:
     "Solo product engineer building with AI — team-level execution without agency overhead. I design, build, and launch MVPs and AI SaaS products end to end.",
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000",
-  ),
+  metadataBase: new URL("https://hanif.studio"),
+  alternates: {
+    canonical: "/",
+  },
   viewport: {
     width: "device-width",
     initialScale: 1,
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
     title: "Hanif — Solo Product Engineer Using AI | MVP & SaaS Development",
     description:
       "Solo product engineer building with AI — team-level execution without agency overhead. I design, build, and launch MVPs and AI SaaS products end to end.",
-    url: process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000",
+    url: "https://hanif.studio",
     siteName: "Hanif Portfolio",
     images: [
       {
@@ -85,7 +86,7 @@ export default function RootLayout({
     "@type": "Person",
     name: "Hanif",
     jobTitle: "Solo Product Engineer",
-    url: process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000",
+    url: "https://hanif.studio",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Jakarta",

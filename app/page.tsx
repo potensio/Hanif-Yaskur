@@ -12,10 +12,7 @@ import { Footer } from "@/components/Footer";
 export default function Home() {
   return (
     <>
-      <link
-        rel="canonical"
-        href={process.env.NEXT_PUBLIC_BASE_URL || "https://yourdomain.com"}
-      />
+      <link rel="canonical" href="https://hanif.studio" />
       <div className="min-h-screen relative bg-gray-100">
         {/* Hero Background */}
         <div className="absolute top-0 w-full z-0 h-[1000px] blur-3xl overflow-hidden">
