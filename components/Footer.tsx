@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import Script from "next/script";
 import { Copy, Check, Twitter, Linkedin } from "lucide-react";
 
 export const Footer: React.FC = () => {
@@ -21,7 +22,7 @@ export const Footer: React.FC = () => {
         <div className="relative z-10 sm:p-12 md:p-16 pt-12 pb-8 px-6">
           <div className="flex flex-col lg:flex-row justify-between gap-8">
             {/* Left side */}
-            <div className="flex flex-col max-w-lg">
+            <div className="flex flex-col flex-1 max-w-lg">
               {/* Logo */}
               <Image
                 src="/hanif-logo-with-text.png"
@@ -37,6 +38,14 @@ export const Footer: React.FC = () => {
                 Schedule a quick, 15-minute call to understand your product and
                 how I work.
               </p>
+              <div className="mt-auto pt-8">
+                <div
+                  className="contra-hire-me-button"
+                  data-analyticsuserid="b6242b7b-8122-465e-8f7b-97a82ea593ae"
+                  data-theme="light"
+                  data-username="hanifstudio"
+                />
+              </div>
             </div>
 
             {/* Right side */}
@@ -153,6 +162,10 @@ export const Footer: React.FC = () => {
           </div>
         </div>
       </div>
+      <Script
+        src="https://contra.com/static/embed/sdk.js"
+        strategy="lazyOnload"
+      />
     </footer>
   );
 };
